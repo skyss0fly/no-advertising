@@ -22,7 +22,7 @@ $this->getServer()->getPluginManager()->registerEvents($this, $this);
 
 public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool {
   switch ($command->getName()) {
-            case "disable":
+            case "noadvert":
 $message = $this->getConfig()->get("Message");
 $value = $this->getConfig()->get("Enabled");
   if ($value) {
