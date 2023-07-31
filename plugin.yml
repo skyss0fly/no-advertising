@@ -1,0 +1,15 @@
+name: noadvertising
+main: skyss0fly\noadvertising\Main
+version: 1.0
+api: 5.0.0
+author: skyss0fly
+description: A simple noadvertising plugin
+permissions:
+  noadvertising.use:
+    default: op
+commands:
+  noadvert:
+    description: use this to make them suffer advertising
+    permission: noadvertising.use
+    default: false
+  
