@@ -50,9 +50,11 @@ public function onChat(PlayerChatEvent $event) {
   
   if($l) {
 
-if (str_contains($chat, $bannedmessage)){
-$player->sendMessage($message);
-          }
+$substring_index = stripos($chat, $bannedmessage);
+ 
+if($substring_index !== false) {
+    $player->sendMessage($message);
+}
   else{
 
   }
