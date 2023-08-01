@@ -49,8 +49,10 @@ public function onChat(PlayerChatEvent $event) {
     $l = $this->getConfig()->get("Enabled");
   
   if($l) {
-
-
+  $player = $event->getPlayer();
+        $chat = $event->getMessage();
+  $message = $this->getConfig()->get("Message");
+    $bannedmessage = $this->getConfig()->get("Banned");
 if (str_contains($chat, $bannedmesage)){
 $player->sendMessage($message);
           }
