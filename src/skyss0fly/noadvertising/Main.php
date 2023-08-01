@@ -51,7 +51,7 @@ public function onChat(PlayerChatEvent $event) {
   if($l) {
 
 
-if str_contains(chat, $bannedmesage){
+if str_contains($chat, $bannedmesage){
 $player->sendMessage($message);
           }
   else{
